@@ -5,3 +5,4 @@ Currently, the UI of Easer is not pretty and needs a lot of improvements; some b
 * Time (`TimeEventPlugin`) uses Android's system level notification mechanism (`AlarmManager`), which is ***inexact*** (from Android 4.4) to *minimize wakeups and battery use* as said in the [official document](https://developer.android.com/reference/android/app/AlarmManager.html). My observation of the maximum shift is 3 minutes.
 * Similarly, Date (`DateEventPlugin`) also uses `AlarmManager` so it may also be inexact (though this behavior is relatively less harmful because 3 minutes is only a small portion compared to a day).
 * `Before` and `After` (`EventType`) are **inclusive**. (I'm not sure if it will be useful to have them exclusive.)
+* Events won't be re-triggered if it is already satisfied and hasn't become unsatisfied yet. That said, you won't need to worry about creating an "after 3:00pm" event and it repeats triggering all the time.

@@ -1,3 +1,13 @@
+## Hackey functionalities ##
+Some functionalities doesn't have official APIs so Easer uses some workarounds (reflection) to achieve that. However, they are unreliable and may not work on some devices. Here is a list of these functionalities:
+
+* Turn mobile data (cellular data) on/off (`CellularOperationPlugin`)
+* Turn hotspot (wireless AP) on/off (`HotspotOperationPlugin`)
+
+It *may* be helpful to install Easer as a system app in order to make them work correctly (I remember there is a example in one of the issues stating this, but I couldn't find it now).
+In future releases, a dedicated area will be used to organize them.
+
+## Functionality Explained ##
 Currently, the UI of Easer is not pretty and needs a lot of improvements; some behaviors may not exactly follow your mind. They are listed here.
 
 * Easer will use relevant system **permissions** to check events and change settings. However, there is no runtime permission check currently. Please give Easer the relevant permission before you use certain events and/or profiles.

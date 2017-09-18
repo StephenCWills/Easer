@@ -16,3 +16,18 @@ Currently, the UI of Easer is not pretty and needs a lot of improvements; some b
 * Similarly, Date (`DateEventPlugin`) also uses `AlarmManager` so it may also be inexact (though this behavior is relatively less harmful because 3 minutes is only a small portion compared to a day).
 * `Before` and `After` (`EventType`) are **inclusive**. (I'm not sure if it will be useful to have them exclusive.)
 * Events won't be re-triggered if it is already satisfied and hasn't become unsatisfied yet. That said, you won't need to worry about creating an "after 3:00pm" event and it repeats triggering all the time.
+
+## Permission ##
+| Permission | Usage | Used by |
+| --- | --- | --- |
+| `ACCESS_COARSE_LOCATION` | Get basestation ID | `CellLocationEventPlugin` |
+| `ACCESS_NETWORK_STATE` | Pre-request of `ACCESS_WIFI_STATE` (not exactly sure) | `WifiEventPlugin` |
+| `ACCESS_WIFI_STATE` | Get WiFi status | `WifiEventPlugin` |
+| `BLUETOOTH` | Access Bluetooth status | `BTDeviceEventPlugin` |
+| `BLUETOOTH_ADMIN` | Switch Bluetooth on/off | `BluetoothOperationPlugin` |
+| `CHANGE_NETWORK_STATE` | Pre-request of `CHANGE_WIFI_STATE` (not exactly sure) | `WifiOperationPlugin` |
+| `CHANGE_WIFI_STATE` | Turn Wifi on/off | `WifiOperationPlugin` |
+| `MODIFY_AUDIO_SETTINGS` | Change ringer mode | `RingerModeOperationPlugin` |
+| `RECEIVE_BOOT_COMPLETED` | Listen for system boot and (depending on settings) auto-start Easer | `BootupReceiver` |
+| `WRITE_EXTERNAL_STORAGE` | Import/Export data && Save logs | *Export* in Settings page && global Logger |
+| `WRITE_SETTINGS` | Change system settings (e.g. brightness) | `BrightnessOperationPlugin` `RotationOperationPlugin` |

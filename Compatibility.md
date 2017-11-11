@@ -3,13 +3,13 @@ This page is dedicated for reporting compatibility situation on different device
 
 
 # `CellularOperationPlugin` (switching mobile data | 開關數據網絡)
-| Device | ROM name & version (if known) | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- |
+| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
+| --- | --- | --- | --- | --- | --- |
 
 # `HotspotOperationPlugin` (switching hotspot | 開關熱點)
-| Device | ROM name & version (if known) | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- |
+| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
+| --- | --- | --- | --- | --- | --- |
 
 # `CommandOperationPlugin` (executing commands | 執行命令)
-| Device | ROM name & version (if known) | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- |
+| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
+| --- | --- | --- | --- | --- | --- |

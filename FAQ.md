@@ -7,7 +7,7 @@ Some functionalities doesn't have official APIs so Easer uses some workarounds (
 | Turn hotspot (wireless AP) on/off | `HotspotOperationPlugin` | Maybe | Not yet |
 | Execute commands | `CommandOperationPlugin` | Probably not (it's said executing commands requires root permission, or it would faild) | Yes |
 
-It is very welcomed to [[report compatibility | Compatibility]] situation on different devices and/or ROMs.
+It is very welcomed to [[report compatibility | 兼容性 Compatibility]] situation on different devices and/or ROMs.
 
 ## Functionality Explained ##
 Currently, the UI of Easer is not pretty and needs a lot of improvements; some behaviors may not exactly follow your mind. They are listed here.

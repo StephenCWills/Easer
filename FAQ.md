@@ -19,17 +19,4 @@ Currently, the UI of Easer is not pretty and needs a lot of improvements; some b
 * Events won't be re-triggered if it is already satisfied and hasn't become unsatisfied yet. That said, you won't need to worry about creating an "after 3:00pm" event and it repeats triggering all the time.
 
 ## Permission ##
-| Permission | Usage | Used by |
-| --- | --- | --- |
-| `ACCESS_COARSE_LOCATION` | Get basestation ID | `CellLocationEventPlugin` |
-| `ACCESS_NETWORK_STATE` | Pre-request of `ACCESS_WIFI_STATE` (not exactly sure) | `WifiEventPlugin` |
-| `ACCESS_WIFI_STATE` | Get WiFi status | `WifiEventPlugin` |
-| `BLUETOOTH` | Access Bluetooth status | `BTDeviceEventPlugin` |
-| `BLUETOOTH_ADMIN` | Switch Bluetooth on/off | `BluetoothOperationPlugin` |
-| `CHANGE_NETWORK_STATE` | Pre-request of `CHANGE_WIFI_STATE` (not exactly sure) | `WifiOperationPlugin` |
-| `CHANGE_WIFI_STATE` | Turn Wifi on/off | `WifiOperationPlugin` |
-| `MODIFY_AUDIO_SETTINGS` | Change ringer mode | `RingerModeOperationPlugin` |
-| `READ_CALENDAR` | Read calendar data | `CalendarEventPlugin` |
-| `RECEIVE_BOOT_COMPLETED` | Listen for system boot and (depending on settings) auto-start Easer | `BootupReceiver` |
-| `WRITE_EXTERNAL_STORAGE` | Import/Export data && Save logs | *Export* in Settings page && global Logger |
-| `WRITE_SETTINGS` | Change system settings (e.g. brightness) | `BrightnessOperationPlugin` `RotationOperationPlugin` |
+See [[here|權限 Permission]] for the full explaination.

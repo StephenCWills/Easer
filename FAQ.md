@@ -1,3 +1,10 @@
+## Better to know ##
+### From Event to Event+Condition ##
+Currently, Easer is in a transition state, going from Event to Event+Condition (see [#86](https://github.com/renyuneyun/Easer/issues/86)). For backward compatibility, all Events remain there.
+
+If you find a Condition having the same name as an Event, you should always prefer to use the Condition (and/or its corresponding `ConditionEvent`).
+The only exception is when you seriously need an Event (short-time effect) rather than a Condition (continous state).
+
 ## Hackey functionalities ##
 Some functionalities doesn't have official APIs so Easer uses some workarounds (reflection) to achieve that. However, they are unreliable and may not work on some devices; enabling *root features* will usually benefit these functions. Here is a list of these functionalities:
 

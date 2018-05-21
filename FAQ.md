@@ -1,5 +1,24 @@
 ## Better to know ##
-### From Event to Event+Condition ##
+### Condition, Event, Operation, Scenario, Profile, Script ###
+These are some terms / words used in Easer. This section explains their meaning.
+
+* Condition
+  * A long-time state
+  * Involves an enter and leave 
+* Event
+  * A short-time (momentary) "event" (as in language meaning)
+* Operation
+  * An action which can be carried out (by Easer)
+* Scenario
+  * Historical name for a pre-defined Event
+* Profile
+  * A collection of Operations
+* Script
+  * User-defined state-action sequence (consider the meaning of this word in a play / film)
+  * Scripts are structured as [tree](https://en.wikipedia.org/wiki/Tree_(data_structure))
+    * Script also refers to a node in the Script Tree
+
+### From Event to Event+Condition ###
 Currently, Easer is in a transition state, going from Event to Event+Condition (see [#86](https://github.com/renyuneyun/Easer/issues/86)). For backward compatibility, all Events remain there.
 
 If you find a Condition having the same name as an Event, you should always prefer to use the Condition (and/or its corresponding `ConditionEvent`).

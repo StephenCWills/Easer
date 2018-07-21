@@ -1,0 +1,50 @@
+Since many people have no clue how Easer should be used (probably because of the unproper UI), this page is created to describe usages and some basic examples for Easer.
+(Note this page is not intended for sharing usages -- some other places may be used later for this purpose.)
+
+This tutorial will assume you have basic understanding of common interaction patterns and UI elements of Android apps (e.g. navigation drawer). Please refer to relevant documents first if you don't. This is not only a joke :/
+
+Please read the following content linearly, unless explicitly said.
+
+**********************************
+Function description and first-use
+**********************************
+
+Generally, since Easer is for automation based on your needs, you should have some requirements first.
+
+In the first part of this tutorial, let's assume you want to:
+
+1. mute your phone and turn off wifi at 1:00 am
+2. turn wifi on when reaching home
+
+Then, you should (naturally be able to) restructure your needs as:
+
+1. At 1:00 am => (mute phone & turn off wifi)
+2. When reaching home => (turn wifi on)
+
+Aha, you now get an *Event* and a set of actions/operations (i.e. *Profile* in Easer) for each requirement. This is what "event-driven" means -- do something when an event happens.
+
+Then, things become intuitive:
+
+1. Move to *Event* page
+    1. Create an *Event* named (for example) `E1`, with the content selecting the "Time" event and 1:00 am
+    2. Do the similar thing for "reaching home" (you can use "Cell Location" for this, which depends on the cellular basestation)
+2. Move to *Profile* page
+    1. create a *Profile* named (for example) `pA`, with two *Operations* (by clicking the "add" button)
+        1. mute phone ("Ringer Mode" -> mute / do-not-disturb)
+        2. turn off wifi ("WiFi" -> off)
+    2. Do the similar thing for "reaching home"
+
+The reason *Event* and *Profile* are separated is for reusing -- this will be covered later.
+
+Then, you have the last step to do: create *Script* to link between *Event* and *Profile*.
+
+1. Move to *Script* page
+2. Create a new *Script*
+    1. Name it "At 1 am"
+    2. At the "Profile" part, select `pA` in the drop-down menu
+    3. Choose "Use Event" (which is the default choice)
+    4. Select `E1` in the drop-down menu for "Event"
+    5. Save
+3. Do the similar thing for "reaching home"
+
+Now you are ready, and if you start the background service of Easer, your phone will be muted and wifi will be turned off at 1:00 am everyday, and wifi will be turned on when approaching your home (basestation, if you use "Cell Location").

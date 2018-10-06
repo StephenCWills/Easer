@@ -48,3 +48,37 @@ Then, you have the last step to do: create *Script* to link between *Event* and 
 3. Do the similar thing for "reaching home"
 
 Now you are ready, and if you start the background service of Easer, your phone will be muted and wifi will be turned off at 1:00 am everyday, and wifi will be turned on when approaching your home (basestation, if you use "Cell Location").
+
+
+************
+Advanced use
+************
+
+You may have noticed that there are more options than what is introduced in the previous part. They are more advanced functions of Easer, which usually do not need to change unless you know what you are doing (e.g. after reading this part). We try to make them as intuitive as possible, and/but here are some more explanations and examples.
+
+
+Chained Scripts
+===============
+
+This is the "Parent" setting when editing a Script.
+
+Scripts can be connected like `trees <https://en.wikipedia.org/wiki/Tree_%28data_structure%29>`_.
+
+See issues `#62 <https://github.com/renyuneyun/Easer/issues/159>`_ `#152 <https://github.com/renyuneyun/Easer/issues/152>`_ for some examples.
+
+
+Dynamics
+========
+
+This is the "chain"/"link" button besides "Profile" spinner/drop-down-list when editing a Script.
+
+See the *Dynamics* section of the `Features page <https://renyuneyun.github.io/Easer/en/FEATURES.html>`_.
+
+
+Advanced Event Settings
+=======================
+
+This is the extra settings when editing an Event.
+
+See [[Replace Event Types with advanced Scenario conditions]]
+

@@ -29,7 +29,7 @@ Then, things become intuitive:
     1. Create an *Event* named (for example) `E1`, with the content selecting the "Time" event and 1:00 am
     2. Do the similar thing for "reaching home" (you can use "Cell Location" for this, which depends on the cellular basestation)
 2. Move to *Profile* page
-    1. create a *Profile* named (for example) `pA`, with two *Operations* (by clicking the "add" button)
+    1. Create a *Profile* named (for example) `pA`, with two *Operations* (by clicking the "add" button)
         1. mute phone ("Ringer Mode" -> mute / do-not-disturb)
         2. turn off wifi ("WiFi" -> off)
     2. Do the similar thing for "reaching home"

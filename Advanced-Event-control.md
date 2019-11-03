@@ -8,13 +8,13 @@ You can use them to alter the behaviour of that particular Script, overriding th
 
 By default, an Event is immediate, which is "volatile": The node will become `true` and then immediately `false` after (recursively) testing and processing the children nodes.
 
-When setting "persistent", the node will be kept `true` after the Event has happened once (until Easer stops, of course). The only way to make it `false` is by using a specific Operation (named "Control Script Node Status").
+When setting "persistent", the node will be kept `true` after the Event has happened once (until Easer stops, of course). Except its predecessors (parents) become false (resulting in this node being cleaned), the only way to make it `false` is by using a specific Operation (named "Control Script Node Status").
 
 ## Repeatable
 
 "Repeatable" means the corresponding Profile can be triggered again (and again...) when the Event happens again.
 
-This setting is specifically useful when used together with "persistent". 
+This setting is specifically useful when used together with "persistent". It makes no difference to a "volatile" one.
 
 
 ## Old notes (no need to read unless interested in history)

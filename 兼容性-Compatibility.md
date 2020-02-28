@@ -16,6 +16,18 @@ In most cases, they are done either by using "hidden API" or using "root".
 
 ## `HotspotOperationPlugin` (toggle hotspot | 開關熱點)
 
+## `AirplaneOperationPlugin` (toggle airplane | 開關飛行模式)
+
+[#261](../issues/261)
+
+## Toggle NFC | 開關NFC
+
+[#253](../issues/253)
+
+## Split mode | 分屏模式
+
+[[#248](../issues/248)
+
 
 # Restricted API | 受限的API
 

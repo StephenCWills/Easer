@@ -1,15 +1,26 @@
-This page is dedicated for reporting **SOME** (i.e. root-related) compatibility situation on different devices and/or ROMs. Please read the first section of [[FAQ]] and only report these functionalities (if other functionalities don't behave normally, please [open an issue](https://github.com/renyuneyun/Easer/issues/new)). Any user is welcome to edit.  
-本頁面專門用於報告Easer的**部分**（可能涉及root的）功能在不同設備及ROM上的兼容性狀況。請首先閱讀[[須知]]的第一節，並請僅報告這些功能的兼容性狀況（其他功能如有問題，請[提交issue](https://github.com/renyuneyun/Easer/issues/new)）。歡迎所有用戶來修改。
+[[Some functionalities|FAQ]] of Easer have to be implemented in a hacky way because of the restriction of Android. This page lists that, and points to the relevant contents for future use (if any).  
+由於Android的限制，Easer的[[部分功能|須知]]不得不用hacky的方式實現。本頁面列出它們，並指向相關的內容以便（或許存在的）未來使用。
+
+    This page is not complete. Please feel free to add more relevant information.
+
+# Not-supported by API | 無API支持
+
+Generally speaking, if something is not supported by API, it can't be done reliably at all -- something works on one device may not work on another, on one ROM but not on another.  
+In most cases, they are done either by using "hidden API" or using "root".  
+可以認爲，沒有API支持的功能完全無法被可靠實現——部分設備可能能用，其他的可能不能；某個ROM上能用，但另一個上不行。  
+絕大多數情況下，實現依賴「隱藏API」或「root」。
+
+## `CellularOperationPlugin` (toggle mobile data | 開關數據網絡)
+
+[#118](../issues/118)
+
+## `HotspotOperationPlugin` (toggle hotspot | 開關熱點)
 
 
-# `CellularOperationPlugin` (switching mobile data | 開關數據網絡)
-| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- | --- |
+# Restricted API | 受限的API
 
-# `HotspotOperationPlugin` (switching hotspot | 開關熱點)
-| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- | --- |
+## `CommandOperationPlugin` (execute commands | 執行命令)
 
-# `CommandOperationPlugin` (executing commands | 執行命令)
-| Device | ROM name & version (if known) | Android version | Easer version | Compatibility | Comments (optional) |
-| --- | --- | --- | --- | --- | --- |
+## Detect app launching / current app | 檢測app啓動/當前app
+
+[#119](../issues/119)

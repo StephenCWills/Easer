@@ -19,6 +19,7 @@ In most cases, they are done either by using "hidden API" or using "root".
 ## `AirplaneOperationPlugin` (toggle airplane | 開關飛行模式)
 
 [#261](../issues/261)
+[#318](../issues/318)
 
 ## Toggle NFC | 開關NFC
 

@@ -64,7 +64,7 @@ This is the "Parent" setting when editing a Script.
 
 Scripts can be connected like `trees <https://en.wikipedia.org/wiki/Tree_%28data_structure%29>`_.
 
-See issues `#62 <https://github.com/renyuneyun/Easer/issues/159>`_ `#152 <https://github.com/renyuneyun/Easer/issues/152>`_ for some examples.
+See issues `#62 <https://github.com/renyuneyun/Easer/issues/62>`_ `#152 <https://github.com/renyuneyun/Easer/issues/152>`_ for some examples.
 
 
 Dynamics

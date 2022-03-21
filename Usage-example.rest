@@ -50,6 +50,21 @@ Then, you have the last step to do: create *Script* to link between *Event* and 
 Now you are ready, and if you start the background service of Easer, your phone will be muted and wifi will be turned off at 1:00 am everyday, and wifi will be turned on when approaching your home (basestation, if you use "Cell Location").
 
 
+
+************
+Tips
+************
+
+Condition and Event
+=====================
+
+There are some overlapping on the functionalities of Condition and Event.
+
+As a rule of thumb, use Condition if you find your desired skill has both a Condition version and an Event version. This would give you more freedom when you want to `chain Scripts <#chained-scripts>`__.
+
+
+
+
 ************
 Advanced use
 ************
@@ -60,9 +75,9 @@ You may have noticed that there are more options than what is introduced in the 
 Chained Scripts
 ===============
 
-This is the "Parent" setting when editing a Script.
+This is the "Predecessor" setting when editing a Script.
 
-Scripts can be connected like `trees <https://en.wikipedia.org/wiki/Tree_%28data_structure%29>`_.
+Scripts can be connected like `graphs <https://en.wikipedia.org/wiki/Graph_(abstract_data_type)>`_.
 
 See issues `#62 <https://github.com/renyuneyun/Easer/issues/62>`_ `#152 <https://github.com/renyuneyun/Easer/issues/152>`_ for some examples.
 
@@ -80,5 +95,5 @@ Advanced Event Settings
 
 This is the extra settings when editing an Event.
 
-See [[Replace Event Types with advanced Scenario conditions]]
+See [[Advanced Event control]]
 
